@@ -567,7 +567,7 @@ export default function HomePage() {
               href="/blog"
               className="inline-flex items-center gap-1.5 text-sm font-bold text-[#b87600] hover:text-[#8a5900] bg-white border border-[#e3dcce] px-4 py-2 rounded-lg shadow-sm shrink-0"
             >
-              <span>جميع المقالات الستة</span>
+              <span>عرض جميع المقالات</span>
               <ArrowLeft className="w-4 h-4" />
             </Link>
           </div>
