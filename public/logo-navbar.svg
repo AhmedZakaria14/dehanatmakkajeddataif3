@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 76" width="340" height="76">
+  <defs>
+    <linearGradient id="navGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff1c5" />
+      <stop offset="35%" stop-color="#f6af24" />
+      <stop offset="70%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <filter id="navGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#f6af24" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Icon on Right (RTL) -->
+  <g transform="translate(268, 6) scale(0.125)" filter="url(#navGlow)">
+    <circle cx="256" cy="256" r="236" fill="#1b2323" stroke="url(#navGold)" stroke-width="6" />
+    <path d="M256 70 L276 104 L256 122 L236 104 Z" fill="url(#navGold)" />
+    <!-- Shield -->
+    <path d="M256 112 C330 112 388 170 388 244 C388 326 312 384 256 422 C200 384 124 326 124 244 C124 170 182 112 256 112 Z"
+          fill="none" stroke="url(#navGold)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Slats -->
+    <line x1="215" y1="190" x2="215" y2="350" stroke="url(#navGold)" stroke-width="10" stroke-linecap="round" />
+    <line x1="256" y1="165" x2="256" y2="380" stroke="url(#navGold)" stroke-width="14" stroke-linecap="round" />
+    <line x1="297" y1="190" x2="297" y2="350" stroke="url(#navGold)" stroke-width="10" stroke-linecap="round" />
+    <!-- Arc -->
+    <path d="M150 290 C175 220 220 160 310 160 C350 160 376 185 365 225 C352 272 290 310 215 320 C170 326 142 344 148 375 C155 408 200 422 256 422"
+          fill="none" stroke="url(#navGold)" stroke-width="16" stroke-linecap="round" />
+    <!-- Apex Sparkle -->
+    <circle cx="256" cy="104" r="6" fill="#ffffff" />
+  </g>
+
+  <!-- Divider -->
+  <line x1="256" y1="14" x2="256" y2="62" stroke="url(#navGold)" stroke-width="1.2" stroke-opacity="0.35" />
+
+  <!-- Arabic Typography -->
+  <g text-anchor="end" style="font-family: 'Tajawal', 'Segoe UI', Tahoma, sans-serif;">
+    <text x="242" y="38" font-size="21" font-weight="800" fill="#ffffff" letter-spacing="-0.3">
+      دهانات <tspan fill="url(#navGold)">وديكورات</tspan>
+    </text>
+    <text x="242" y="58" font-size="12" font-weight="600" fill="#f6af24" letter-spacing="0.2">
+      مكة المكرمة • جدة • الطائف
+    </text>
+  </g>
+</svg>

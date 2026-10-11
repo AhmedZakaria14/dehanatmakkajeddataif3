@@ -1,0 +1,6 @@
+{
+  "name": "دهانات وديكورات في مكة وجدة والطائف",
+  "description": "خدمات تنفيذ الدهانات الداخلية والخارجية وديكورات الجدران وورق الحائط وبديل الخشب والرخام في مكة المكرمة وجدة والطائف مع تجهيز الأسطح والمعجون.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

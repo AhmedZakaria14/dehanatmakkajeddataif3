@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 240" width="880" height="240">
+  <defs>
+    <radialGradient id="fullBgGrad" cx="30%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#192121" />
+      <stop offset="100%" stop-color="#0e1313" />
+    </radialGradient>
+
+    <linearGradient id="fullGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff2c9" />
+      <stop offset="30%" stop-color="#f6af24" />
+      <stop offset="65%" stop-color="#d4af37" />
+      <stop offset="100%" stop-color="#aa7c11" />
+    </linearGradient>
+
+    <linearGradient id="fullAmber" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <filter id="fullGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#f6af24" flood-opacity="0.3" />
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <rect width="880" height="240" rx="32" fill="url(#fullBgGrad)" />
+  <rect width="874" height="234" x="3" y="3" rx="29" fill="none" stroke="url(#fullGold)" stroke-width="1.5" stroke-opacity="0.25" />
+
+  <!-- Logo Mark on Right (RTL Oriented: Mark is on Right, Typography to Left) -->
+  <g transform="translate(680, 20) scale(0.39)" filter="url(#fullGlow)">
+    <!-- Base Glow Behind Emblem -->
+    <circle cx="256" cy="256" r="230" fill="#f6af24" opacity="0.06" />
+
+    <!-- Outer Fine Geometric Ring -->
+    <circle cx="256" cy="256" r="216" fill="none" stroke="url(#fullGold)" stroke-width="3" stroke-opacity="0.3" stroke-dasharray="10 8" />
+
+    <!-- Crown Diamond Apex -->
+    <path d="M256 70 L276 104 L256 122 L236 104 Z" fill="url(#fullGold)" />
+    <circle cx="256" cy="104" r="5" fill="#ffffff" />
+
+    <!-- External Architectural Frame -->
+    <path d="M256 112
+             C330 112 388 170 388 244
+             C388 326 312 384 256 422
+             C200 384 124 326 124 244
+             C124 170 182 112 256 112 Z"
+          fill="none"
+          stroke="url(#fullGold)"
+          stroke-width="14"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+
+    <!-- Inner Fluted Slats (بديل الخشب والرخام) -->
+    <g opacity="0.95">
+      <line x1="205" y1="200" x2="205" y2="340" stroke="url(#fullAmber)" stroke-width="8" stroke-linecap="round" />
+      <line x1="230" y1="180" x2="230" y2="360" stroke="url(#fullGold)" stroke-width="10" stroke-linecap="round" />
+      <line x1="256" y1="165" x2="256" y2="380" stroke="url(#fullGold)" stroke-width="12" stroke-linecap="round" />
+      <line x1="282" y1="180" x2="282" y2="360" stroke="url(#fullGold)" stroke-width="10" stroke-linecap="round" />
+      <line x1="307" y1="200" x2="307" y2="340" stroke="url(#fullAmber)" stroke-width="8" stroke-linecap="round" />
+    </g>
+
+    <!-- Sweeping Paint Stroke Arc -->
+    <path d="M150 290
+             C175 220 220 160 310 160
+             C350 160 376 185 365 225
+             C352 272 290 310 215 320
+             C170 326 142 344 148 375
+             C155 408 200 422 256 422"
+          fill="none"
+          stroke="url(#fullGold)"
+          stroke-width="16"
+          stroke-linecap="round" />
+
+    <!-- Roller Accent -->
+    <path d="M335 150 L368 183 L350 201 L317 168 Z" fill="url(#fullGold)" />
+    <!-- Sparkles -->
+    <path d="M178 190 Q178 205 163 205 Q178 205 178 220 Q178 205 193 205 Q178 205 178 190 Z" fill="url(#fullGold)" />
+    <path d="M345 315 Q345 326 334 326 Q345 326 345 337 Q345 326 356 326 Q345 326 345 315 Z" fill="url(#fullGold)" />
+  </g>
+
+  <!-- Vertical Subtle Divider -->
+  <line x1="655" y1="45" x2="655" y2="195" stroke="url(#fullGold)" stroke-width="1.5" stroke-opacity="0.35" />
+
+  <!-- Arabic Typography Block -->
+  <g text-anchor="end" direction="rtl" style="font-family: 'Tajawal', 'Segoe UI', Tahoma, sans-serif;">
+    <!-- Main Arabic Title -->
+    <text x="625" y="105" font-size="52" font-weight="800" fill="#ffffff" letter-spacing="-0.5">
+      دهانات <tspan fill="url(#fullGold)">وديكورات</tspan>
+    </text>
+
+    <!-- Subtitle: Regions -->
+    <text x="625" y="148" font-size="22" font-weight="600" fill="#d4af37" letter-spacing="0.5">
+      مكة المكرمة  •  جدة  •  الطائف
+    </text>
+
+    <!-- Luxury Descriptor Line -->
+    <text x="625" y="186" font-size="14" font-weight="500" fill="#9ca3af" letter-spacing="1">
+      تنفيذ تشطيبات الواجهات • بديل الخشب والرخام • دهانات داخلية وخارجية
+    </text>
+  </g>
+
+  <!-- Left Accent Badge -->
+  <g transform="translate(60, 68)">
+    <rect width="116" height="104" rx="14" fill="#141a1a" stroke="url(#fullGold)" stroke-width="1.2" stroke-opacity="0.4" />
+    <text x="58" y="44" font-size="12" font-weight="700" fill="#f6af24" text-anchor="middle" letter-spacing="1.5" font-family="'Segoe UI', Arial, sans-serif">
+      EST. 2026
+    </text>
+    <line x1="20" y1="56" x2="96" y2="56" stroke="url(#fullGold)" stroke-width="0.8" stroke-opacity="0.4" />
+    <text x="58" y="78" font-size="11" font-weight="600" fill="#e5e7eb" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif">
+      PREMIUM
+    </text>
+    <text x="58" y="93" font-size="9" font-weight="500" fill="#9ca3af" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif">
+      QUALITY
+    </text>
+  </g>
+</svg>

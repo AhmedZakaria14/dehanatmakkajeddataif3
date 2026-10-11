@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#1e2727" />
+      <stop offset="60%" stop-color="#131919" />
+      <stop offset="100%" stop-color="#0a0e0e" />
+    </radialGradient>
+
+    <!-- Royal Gold Linear Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff1c5" />
+      <stop offset="25%" stop-color="#f6af24" />
+      <stop offset="55%" stop-color="#d4af37" />
+      <stop offset="85%" stop-color="#aa7c11" />
+      <stop offset="100%" stop-color="#fcd34d" />
+    </linearGradient>
+
+    <!-- Warm Amber Secondary Gradient -->
+    <linearGradient id="amberGrad" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fde68a" />
+      <stop offset="40%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <!-- Subtle Metallic Sheen -->
+    <linearGradient id="sheenGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.0" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.15" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#f6af24" flood-opacity="0.35" />
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.8" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#f59e0b" flood-opacity="0.2" />
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Container with subtle border -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" stroke-opacity="0.35" />
+
+  <!-- Outer Fine Geometric Ring -->
+  <circle cx="256" cy="256" r="216" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-opacity="0.2" stroke-dasharray="8 6" />
+  <circle cx="256" cy="256" r="226" fill="none" stroke="url(#goldGrad)" stroke-width="0.75" stroke-opacity="0.15" />
+
+  <!-- The Architectural Crest Group -->
+  <g filter="url(#goldGlow)">
+    <!-- Crown Diamond Apex -->
+    <path d="M256 74 L272 106 L256 122 L240 106 Z" fill="url(#goldGrad)" />
+    <circle cx="256" cy="106" r="4" fill="#ffffff" />
+
+    <!-- External Architectural Frame (Arch / Shield) -->
+    <path d="M256 112
+             C330 112 388 170 388 244
+             C388 326 312 384 256 422
+             C200 384 124 326 124 244
+             C124 170 182 112 256 112 Z"
+          fill="none"
+          stroke="url(#goldGrad)"
+          stroke-width="8"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+
+    <!-- Inner Fluted Slats (Decorative Wood Panels / بديل الخشب) -->
+    <g opacity="0.95">
+      <!-- Slat 1 (Left) -->
+      <line x1="210" y1="200" x2="210" y2="340" stroke="url(#amberGrad)" stroke-width="5" stroke-linecap="round" />
+      <!-- Slat 2 (Left Inner) -->
+      <line x1="230" y1="180" x2="230" y2="360" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round" />
+      <!-- Slat 3 (Center Axis) -->
+      <line x1="256" y1="165" x2="256" y2="380" stroke="url(#goldGrad)" stroke-width="7" stroke-linecap="round" />
+      <!-- Slat 4 (Right Inner) -->
+      <line x1="282" y1="180" x2="282" y2="360" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round" />
+      <!-- Slat 5 (Right) -->
+      <line x1="302" y1="200" x2="302" y2="340" stroke="url(#amberGrad)" stroke-width="5" stroke-linecap="round" />
+    </g>
+
+    <!-- Sweeping Paint Stroke Arc (Art of Painting / دهانات ناعمة متقنة) -->
+    <path d="M150 290
+             C175 220 220 160 310 160
+             C350 160 376 185 365 225
+             C352 272 290 310 215 320
+             C170 326 142 344 148 375
+             C155 408 200 422 256 422"
+          fill="none"
+          stroke="url(#goldGrad)"
+          stroke-width="9"
+          stroke-linecap="round" />
+
+    <!-- Paint Roller & Finish Trowel Accent -->
+    <path d="M335 152 L365 182 L350 197 L320 167 Z" fill="url(#goldGrad)" />
+    <path d="M365 182 L385 202" stroke="url(#amberGrad)" stroke-width="4" stroke-linecap="round" />
+
+    <!-- Radiant Accent Sparkles -->
+    <path d="M178 190 Q178 205 163 205 Q178 205 178 220 Q178 205 193 205 Q178 205 178 190 Z" fill="url(#goldGrad)" />
+    <path d="M345 315 Q345 326 334 326 Q345 326 345 337 Q345 326 356 326 Q345 326 345 315 Z" fill="url(#goldGrad)" />
+  </g>
+
+  <!-- Small Bottom Subtitle / Three Region Dots -->
+  <g fill="url(#goldGrad)" opacity="0.9">
+    <circle cx="216" cy="452" r="3.5" />
+    <circle cx="256" cy="452" r="5" />
+    <circle cx="296" cy="452" r="3.5" />
+  </g>
+</svg>
